@@ -1,6 +1,6 @@
 app-id: org.americanmonk.TipitakaPaliReader
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
 command: tipitaka_pali_reader
 separate-locales: false
@@ -30,6 +30,10 @@ modules:
       - install -Dm644 tpr/org.americanmonk.TipitakaPaliReader.desktop /app/share/applications/org.americanmonk.TipitakaPaliReader.desktop
     sources:
       - type: archive
-        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v.2.3.5.56/tpr.tar.gz
-        sha256: 636c475197a511dd9ecb35733599707e1ccdcc766d0a16f16ec51efe5f5ebccd
+        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.5.8%2B59/tpr1.5.9.59.tar.gz
+        sha256: bd15f0ada508864bd03d357bddb9fca14a2615f0775edd08a8b9820da4bfa538
         dest: "tpr"
+
+# - type: archive
+#   url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v.2.3.5.56/tpr.tar.gz
+#        path: tpr1.5.9.59.tar.gz
