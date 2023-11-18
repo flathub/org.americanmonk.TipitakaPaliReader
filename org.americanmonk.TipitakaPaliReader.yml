@@ -32,8 +32,5 @@ modules:
       - type: archive
 #        path: tpr2-59-62.tar.gz
         url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.5.9%2B62/tpr2-59-62.tar.gz
-        sha256: 05516a5601e4783fbf72c5bb3c76a0cdb9d817b11cc875329e83970c778d9dec
+        sha256: 8e961e0cd9868e33b24c34cb77bb88d64f47fda6b66897607591fd4058949722
         dest: "tpr"
-
-# - type: archive
-#   url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.5.9%2B62/tpr2-59-62.tar.gz
