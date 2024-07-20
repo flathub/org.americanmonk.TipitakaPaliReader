@@ -32,7 +32,7 @@ modules:
       - type: archive
 #        path: tpr-74.tar.gz
         url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.6.4%2B74/tpr-74.tar.gz
-        sha256: 5aeba0f3908d267ab7baf1192c233798356d21f788d54dd2dfd50711045ddd68
+        sha256: 6416ce240da3aa8014b14f7e514e39d989ff1362c121c060870bba54c3824332
         dest: "tpr"
 
 # - type: archive
