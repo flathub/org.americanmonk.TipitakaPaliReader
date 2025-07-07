@@ -10,6 +10,9 @@ finish-args:
   - --socket=wayland
   - --device=dri
   - --share=network
+  - --talk-name=org.freedesktop.portal.OpenURI  # Used to open external URLs for https://openrouter.ai/ to get an ai key
+  - --filesystem=xdg-documents:ro
+  - --filesystem=xdg-download:ro
 modules:
   - name: tipitaka_pali_reader
     buildsystem: simple
@@ -30,9 +33,9 @@ modules:
       - install -Dm644 tpr/org.americanmonk.TipitakaPaliReader.desktop /app/share/applications/org.americanmonk.TipitakaPaliReader.desktop
     sources:
       - type: archive
-        #path: tpr_85.tar.gz
-        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.7.0%2B85/tpr_85.tar.gz            
-        sha256: 04504790c91df9d55538d96bf7c53c546a7d94b732176facd5c414c64d7e8ebe
+#        path: tpr_92.tar.gz
+        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.7.1%2B92/tpr_92.tar.gz          
+        sha256: dc1a202d5ec58b2192637cd8cc17f660f5c9ee737865215998ab24b480e5ab45
         dest: "tpr"
 
 # - type: archive
