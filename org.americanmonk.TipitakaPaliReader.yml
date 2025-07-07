@@ -10,7 +10,6 @@ finish-args:
   - --socket=wayland
   - --device=dri
   - --share=network
-  - --talk-portal  # Used to open external URLs for https://openrouter.ai/ to get an ai key
   - --filesystem=xdg-documents:ro
   - --filesystem=xdg-download:ro
 modules:
