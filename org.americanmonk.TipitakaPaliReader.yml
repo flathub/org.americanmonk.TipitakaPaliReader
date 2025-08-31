@@ -33,9 +33,9 @@ modules:
       - install -Dm644 tpr/org.americanmonk.TipitakaPaliReader.desktop /app/share/applications/org.americanmonk.TipitakaPaliReader.desktop
     sources:
       - type: archive
-#        path: tpr_95.tar.gz
-        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.7.2%2B95/tpr_95.tar.gz
-        sha256: 56c404e4ae7c0e2cad1217e0ada30116ffcc2609d4e9bad692fb061682a2aaea
+#        path: tpr_99.tar.gz
+        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/2.7.2%2B99/tpr_99.tar.gz
+        sha256: ac3a573930db3eea3fa294f0adb75036587995f1ae8fb81933aadff7c726d7da
         dest: "tpr"
 
 # - type: archive
