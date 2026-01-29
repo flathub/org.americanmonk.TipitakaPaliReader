@@ -31,19 +31,26 @@ modules:
       - install -Dm644 tpr/icons/256x256/org.americanmonk.TipitakaPaliReader.png /app/share/icons/hicolor/256x256/apps/org.americanmonk.TipitakaPaliReader.png
       - install -Dm644 tpr/icons/512x512/org.americanmonk.TipitakaPaliReader.png /app/share/icons/hicolor/512x512/apps/org.americanmonk.TipitakaPaliReader.png
       - install -Dm644 tpr/org.americanmonk.TipitakaPaliReader.desktop /app/share/applications/org.americanmonk.TipitakaPaliReader.desktop
+      # 1. Update Exec line to include %u (allows passing the URL)
+      - sed -i 's|^Exec=.*|Exec=tipitaka_pali_reader %u|' /app/share/applications/org.americanmonk.TipitakaPaliReader.desktop
+      
+      # 2. Add MimeType if missing (registers the protocol)
+      - |
+        if ! grep -q "MimeType" /app/share/applications/org.americanmonk.TipitakaPaliReader.desktop; then
+          echo "MimeType=x-scheme-handler/tpr.pali.tools;" >> /app/share/applications/org.americanmonk.TipitakaPaliReader.desktop
+        fi
     sources:
       - type: archive
-#        path: tpr_99.tar.gz
-        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/2.7.2%2B99/tpr_99.tar.gz
-        sha256: ac3a573930db3eea3fa294f0adb75036587995f1ae8fb81933aadff7c726d7da
-        dest: "tpr"
+        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.7.3%2B100/tpr_100.tar.gz
+        sha256: bf375fe871871b0038681490e4c10393d2f07b84355f6154a50f1946f8cb718a
+        dest: tpr
 
 # - type: archive
 #   url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v.2.3.5.56/tpr.tar.gz
 #        path: tpr1.5.9.59.tar.gz
 
 #  commands
-#  sha256sum tpr_XX.tar.gz
+#  sha256sum tpr_100.tar.gz
 #  flatpak-builder --force-clean build-dir org.americanmonk.TipitakaPaliReader.yml
 #  flatpak-builder --run build-dir org.americanmonk.TipitakaPaliReader.yml tipitaka_pali_reader
 
