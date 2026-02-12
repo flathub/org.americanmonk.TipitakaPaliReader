@@ -41,8 +41,8 @@ modules:
         fi
     sources:
       - type: archive
-        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.7.3%2B100/tpr_100.tar.gz
-        sha256: bf375fe871871b0038681490e4c10393d2f07b84355f6154a50f1946f8cb718a
+        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.7.4%2B102/tpr_102.tar.gz
+        sha256: b371d2840dad52a47ec80f922f60cb58d70247a6e7beb293f12f3e370c38d045
         dest: tpr
 
 # - type: archive
@@ -50,7 +50,7 @@ modules:
 #        path: tpr1.5.9.59.tar.gz
 
 #  commands
-#  sha256sum tpr_100.tar.gz
+#  sha256sum tpr_102.tar.gz
 #  flatpak-builder --force-clean build-dir org.americanmonk.TipitakaPaliReader.yml
 #  flatpak-builder --run build-dir org.americanmonk.TipitakaPaliReader.yml tipitaka_pali_reader
 
