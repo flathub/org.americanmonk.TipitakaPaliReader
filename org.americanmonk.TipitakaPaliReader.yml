@@ -1,6 +1,6 @@
 app-id: org.americanmonk.TipitakaPaliReader
 runtime: org.freedesktop.Platform
-runtime-version: "23.08"
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 command: tipitaka_pali_reader
 separate-locales: false
@@ -41,13 +41,14 @@ modules:
         fi
     sources:
       - type: archive
-        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.7.4%2B102/tpr_102a.tar.gz
-        sha256: 1557e793ab319cc61a9cf300342a4beb05b97a51efbcab1378c3de54539bcb68
+        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.9.1v121/tpr_121.tar.gz
+        sha256: 06f622c6a2fc1ee59777269b41d6f3bbfb6075d379545d024ebffaadb5005295
         dest: tpr
 
-# - type: archive
+# - type: archive 
 #   url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v.2.3.5.56/tpr.tar.gz
 #        path: tpr1.5.9.59.tar.gz
+#        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.9.1v121/tpr_121.tar.gz
 
 #  commands
 #  sha256sum tpr_102.tar.gz
