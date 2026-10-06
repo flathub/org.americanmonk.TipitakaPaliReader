@@ -10,8 +10,6 @@ finish-args:
   - --socket=wayland
   - --device=dri
   - --share=network
-  - --filesystem=xdg-documents
-  - --filesystem=xdg-download
 modules:
   - name: tipitaka_pali_reader
     buildsystem: simple
