@@ -10,6 +10,8 @@ finish-args:
   - --socket=wayland
   - --device=dri
   - --share=network
+  - --filesystem=xdg-documents
+  - --filesystem=xdg-download
 modules:
   - name: tipitaka_pali_reader
     buildsystem: simple
@@ -19,7 +21,7 @@ modules:
       - mkdir /app/bin/
       - mkdir /app/lib/
       - ln -s /app/tpr/tipitaka_pali_reader /app/bin/tipitaka_pali_reader
-#      - ln -s /usr/lib/x86_64-linux-gnu/libsqlite3.so.0 /app/lib/libsqlite3.so
+      - ln -s /usr/lib/x86_64-linux-gnu/libsqlite3.so.0 /app/lib/libsqlite3.so
       - install -Dm644 tpr/org.americanmonk.TipitakaPaliReader.xml /app/share/appdata/org.americanmonk.TipitakaPaliReader.appdata.xml
       - install -Dm644 tpr/icons/24x24/org.americanmonk.TipitakaPaliReader.png /app/share/icons/hicolor/24x24/apps/org.americanmonk.TipitakaPaliReader.png
       - install -Dm644 tpr/icons/32x32/org.americanmonk.TipitakaPaliReader.png /app/share/icons/hicolor/32x32/apps/org.americanmonk.TipitakaPaliReader.png
