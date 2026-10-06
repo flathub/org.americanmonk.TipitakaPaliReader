@@ -10,8 +10,8 @@ finish-args:
   - --socket=wayland
   - --device=dri
   - --share=network
-  - --filesystem=xdg-documents:ro
-  - --filesystem=xdg-download:ro
+  - --filesystem=xdg-documents
+  - --filesystem=xdg-download
 modules:
   - name: tipitaka_pali_reader
     buildsystem: simple
@@ -21,7 +21,7 @@ modules:
       - mkdir /app/bin/
       - mkdir /app/lib/
       - ln -s /app/tpr/tipitaka_pali_reader /app/bin/tipitaka_pali_reader
-      - ln -s /usr/lib/x86_64-linux-gnu/libsqlite3.so.0 /app/lib/libsqlite3.so
+#      - ln -s /usr/lib/x86_64-linux-gnu/libsqlite3.so.0 /app/lib/libsqlite3.so
       - install -Dm644 tpr/org.americanmonk.TipitakaPaliReader.xml /app/share/appdata/org.americanmonk.TipitakaPaliReader.appdata.xml
       - install -Dm644 tpr/icons/24x24/org.americanmonk.TipitakaPaliReader.png /app/share/icons/hicolor/24x24/apps/org.americanmonk.TipitakaPaliReader.png
       - install -Dm644 tpr/icons/32x32/org.americanmonk.TipitakaPaliReader.png /app/share/icons/hicolor/32x32/apps/org.americanmonk.TipitakaPaliReader.png
@@ -40,8 +40,8 @@ modules:
         fi
     sources:
       - type: archive
-        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v2.9.3%2B123/tpr_123.zip
-        sha256: 68bb40aace4a51a5fab464ea4452223a90fd02f170db5292d68a654355a829a0
+        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/3.0.1%2B125/tpr_125.tar.gz
+        sha256: 1bb368e19293e365d535cfe30009acd79a1ccd130628a7a99b351599e125b0ee
         strip-components: 0
         dest: tpr
 
