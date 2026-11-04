@@ -40,8 +40,8 @@ modules:
         fi
     sources:
       - type: archive
-        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v3.1.4%2B135/tpr_135.tar.gz
-        sha256: f5ea97252ab9c400b03f1f1e53bbaa307b771303755378f6bcbb1790a9ad7897
+        url: https://github.com/bksubhuti/tipitaka-pali-reader/releases/download/v3.1.6%2B137/tpr_137.tar.gz
+        sha256: 8840486c4242a43a9a6392ca6d2f7b491d10a35bcb2d6245a9e0ea6323503ac9
         strip-components: 0
         dest: tpr
 
